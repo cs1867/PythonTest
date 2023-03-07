@@ -30,17 +30,6 @@ pipeline {
       }
     }
 
-    stage('Build') {
-      steps {
-        sh '''##docker build 
-
-##docker push cs1867/jenkinstest1:tagname
-
-ls
-'''
-      }
-    }
-
     stage('log in docker hub') {
       environment {
         DH_USERNAME = 'cs1867'
