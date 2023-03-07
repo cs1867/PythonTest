@@ -15,7 +15,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('Send mail') {
           steps {
             mail(subject: 'test', body: 'Jenkins test pass', from: 'csacco@iu.edu', to: 'csacco@iu.edu')
           }
