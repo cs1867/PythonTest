@@ -40,5 +40,12 @@ pipeline {
       }
     }
 
+    stage('Push container') {
+      steps {
+        sh '''docker push cs1867/jenkinstest1:latest
+'''
+      }
+    }
+
   }
 }
