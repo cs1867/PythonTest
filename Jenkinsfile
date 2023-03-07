@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Script Check') {
-      steps {
-        sh 'ls -al '
+      parallel {
+        stage('Script Check') {
+          steps {
+            sh 'ls -al '
+          }
+        }
+
+        stage('') {
+          steps {
+            mail(subject: 'test', body: 'Jenkins test pass', from: 'csacco@iu.edu', to: 'csacco@iu.edu')
+          }
+        }
+
       }
     }
 
