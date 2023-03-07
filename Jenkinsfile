@@ -30,24 +30,5 @@ pipeline {
       }
     }
 
-    stage('log in docker hub') {
-      environment {
-        DH_USERNAME = 'cs1867'
-        DH_PWD = 'Jeep1979!!'
-      }
-      steps {
-        sh ''' 
-
-ls -al '''
-      }
-    }
-
-    stage('Push container') {
-      steps {
-        sh '''docker push cs1867/jenkinstest1:latest
-'''
-      }
-    }
-
   }
 }
