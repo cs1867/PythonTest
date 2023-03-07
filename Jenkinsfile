@@ -36,7 +36,9 @@ pipeline {
         DH_PWD = 'Jeep1979!!'
       }
       steps {
-        sh 'docker login -u $DH_USERNAME -p $DH_PWD'
+        sh '''##docker login -u $DH_USERNAME -p $DH_PWD
+
+ls -al '''
       }
     }
 
