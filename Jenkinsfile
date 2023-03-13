@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Script Check') {
           steps {
-            sh 'ls -al '
+            sh 'pwd'
           }
         }
 
@@ -24,7 +24,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo "Everything is working" > test.out'
       }
