@@ -24,11 +24,5 @@ pipeline {
       }
     }
 
-    stage('error') {
-      steps {
-        sh 'echo "Everything is working" > test.out'
-      }
-    }
-
   }
 }
