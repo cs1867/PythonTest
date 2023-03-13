@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'echo "Everything is working" > test.out'
+      }
+    }
+
   }
 }
