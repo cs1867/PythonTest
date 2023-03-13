@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Script Check') {
           steps {
-            sh 'pwd'
+            sh 'ls -al'
           }
         }
 
