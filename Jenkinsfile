@@ -24,11 +24,5 @@ pipeline {
       }
     }
 
-    stage('Python Script') {
-      steps {
-        sh 'python3 MOD.py'
-      }
-    }
-
   }
 }
